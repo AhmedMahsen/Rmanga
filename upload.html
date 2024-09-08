@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Manga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Upload Manga</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="manga-title">Manga Title:</label>
+            <input type="text" id="manga-title" name="title" required><br>
+            <label for="manga-file">Manga File (PDF/Images):</label>
+            <input type="file" id="manga-file" name="file" required><br>
+            <input type="submit" value="Upload">
+        </form>
+    </main>
+</body>
+</html>
